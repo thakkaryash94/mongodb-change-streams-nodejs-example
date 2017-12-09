@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-change-streams-nodejs-example",
+  "version": "1.0.0",
+  "description": "Mongodb change streams Node.js example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thakkaryash94/mongodb-change-streams-nodejs-example.git"
+  },
+  "author": "Yash Thakkar <thakkaryash94@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thakkaryash94/mongodb-change-streams-nodejs-example/issues"
+  },
+  "homepage": "https://github.com/thakkaryash94/mongodb-change-streams-nodejs-example#readme",
+  "dependencies": {
+    "mongodb": "^3.0.0-rc0"
+  }
+}
