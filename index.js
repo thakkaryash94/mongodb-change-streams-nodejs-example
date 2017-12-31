@@ -26,6 +26,11 @@ MongoClient.connect("mongodb://localhost:27017,localhost:27018,localhost:27019?r
       console.log(change);
     });
 
+    /*
+    We will timeout function so that we can see what is actually happening in slow motion.
+    */
+
+    // insert few document
     setTimeout(function() {
       collection.insert({ "batman": "bruce wayne" }, function(err) {
         assert.ifError(err);
@@ -56,6 +61,7 @@ MongoClient.connect("mongodb://localhost:27017,localhost:27018,localhost:27019?r
       });
     }, 5000);
 
+    // update existing document
     setTimeout(function() {
       collection.updateOne(
         { "ironman": "tony stark" },
@@ -66,6 +72,7 @@ MongoClient.connect("mongodb://localhost:27017,localhost:27018,localhost:27019?r
       );
     }, 6000);
 
+    // delete existing document
     setTimeout(function() {
       collection.deleteOne({ "spiderman": "peter parker" }, function(err) {
         assert.ifError(err);
